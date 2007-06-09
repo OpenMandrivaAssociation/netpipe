@@ -1,8 +1,7 @@
 %define real_name NetPIPE
 %define name        netpipe
-%define version	    3.7
-%define subversion  rc3
-%define release     %mkrel 0.%{subversion}
+%define version	    3.7.1
+%define release     %mkrel 1
 
 Summary: Protocol independent performance tool
 Name: %name
@@ -11,7 +10,7 @@ Release: %release
 License: GPL
 Group: Networking/Other
 URL: http://www.scl.ameslab.gov/netpipe/
-Source: http://www.scl.ameslab.gov/netpipe/code/%{real_name}-%{version}-%{subversion}.tar.bz2
+Source: http://www.scl.ameslab.gov/netpipe/code/%{real_name}-%{version}.tar.bz2
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 %description
@@ -25,7 +24,7 @@ tests to provide an accurate timing. Latencies are calculated by dividing
 the round trip time in half for small messages ( < 64 Bytes ). 
 
 %prep
-%setup -q -n %{real_name}-%{version}-%{subversion}
+%setup -q -n %{real_name}-%{version}
 
 %build
 %make memcpy tcp 
@@ -35,6 +34,7 @@ the round trip time in half for small messages ( < 64 Bytes ).
 %{__install} -D -m0755 NPmemcpy %{buildroot}%{_bindir}/NPmemcpy
 %{__install} -D -m0755 NPtcp %{buildroot}%{_bindir}/NPtcp
 %{__install} -D -m0644 dox/netpipe.1 %{buildroot}%{_mandir}/man1/netpipe.1
+
 %clean
 %{__rm} -rf %{buildroot}
 

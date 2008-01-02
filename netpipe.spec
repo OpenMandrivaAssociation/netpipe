@@ -11,6 +11,7 @@ License: GPL
 Group: Networking/Other
 URL: http://www.scl.ameslab.gov/netpipe/
 Source: http://www.scl.ameslab.gov/netpipe/code/%{real_name}-%{version}.tar.bz2
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 %description
 NetPIPE is a protocol independent performance tool that visually represents

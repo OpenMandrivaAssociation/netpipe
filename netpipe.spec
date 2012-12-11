@@ -1,7 +1,7 @@
 %define real_name NetPIPE
 %define name        netpipe
 %define version	    3.7.1
-%define release     %mkrel 6
+%define release     %mkrel 5
 
 Summary: Protocol independent performance tool
 Name: %name
@@ -46,4 +46,41 @@ the round trip time in half for small messages ( < 64 Bytes ).
 %{_mandir}/man1/netpipe.1*
 %{_bindir}/*
 
+
+
+
+%changelog
+* Fri Sep 04 2009 Thierry Vignaud <tvignaud@mandriva.com> 3.7.1-5mdv2010.0
++ Revision: 430166
+- rebuild
+
+* Tue Jul 29 2008 Thierry Vignaud <tvignaud@mandriva.com> 3.7.1-4mdv2009.0
++ Revision: 253842
+- rebuild
+
+* Mon Mar 10 2008 Erwan Velu <erwan@mandriva.org> 3.7.1-2mdv2008.1
++ Revision: 183363
+- Rebuild
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+  + Thierry Vignaud <tvignaud@mandriva.com>
+    - kill re-definition of %%buildroot on Pixel's request
+
+* Sat Jun 09 2007 Erwan Velu <erwan@mandriva.org> 3.7.1-1mdv2008.0
++ Revision: 37720
+- 3.7.1
+
+
+* Mon Feb 12 2007 Erwan Velu <erwan@mandriva.org> 3.7-0.rc3mdv2007.0
++ Revision: 119979
+- 3.7-rc3
+- Import netpipe
+
+* Tue Jan 17 2006 Michael Scherer <misc@mandriva.org> 3.6.2-2mdk
+- use mkrel
+
+* Sat Jan 15 2005 Michael Scherer <misc@mandrake.org> 3.6.2-1mdk
+- import into contribs, based on Dag Wieers spec
 

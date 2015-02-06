@@ -1,7 +1,7 @@
 %define real_name NetPIPE
 %define name        netpipe
 %define version	    3.7.1
-%define release     %mkrel 5
+%define release     6
 
 Summary: Protocol independent performance tool
 Name: %name

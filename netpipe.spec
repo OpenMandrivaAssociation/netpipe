@@ -9,7 +9,7 @@ Version: %version
 Release: %release
 License: GPL
 Group: Networking/Other
-URL: http://www.scl.ameslab.gov/netpipe/
+URL: https://www.scl.ameslab.gov/netpipe/
 Source: http://www.scl.ameslab.gov/netpipe/code/%{real_name}-%{version}.tar.bz2
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
